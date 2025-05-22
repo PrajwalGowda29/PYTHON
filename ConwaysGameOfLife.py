@@ -1,4 +1,5 @@
 ##Conways Game Of Life
+print("Prajwal BR,USN:1AY24AI083,SEC:O")
 import numpy as np
 import os
 import time
