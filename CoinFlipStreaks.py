@@ -1,5 +1,5 @@
 #coinflip
-print("Mohd Jawwad Ali Farooqui,USN:1AY24AI070,SEC:O")
+print("Prajwal BR,USN:1AY24AI083,SEC:O")
 import random
 NUMBER_OF_EXPERIMENTS = 10000
 FLIPS_PER_EXPERIMENT = 100
