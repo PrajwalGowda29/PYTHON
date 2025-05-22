@@ -4,11 +4,9 @@ import numpy as np
 import os
 import time
 
-# Grid size
 WIDTH = 20
 HEIGHT = 20
 
-# Time delay between generations (in seconds)
 DELAY = 0.5
 
 def clear_screen():
@@ -41,7 +39,6 @@ def next_generation(grid):
     return new_grid
 
 def main():
-    # Initialize grid with random 0s and 1s
     grid = np.random.choice([0, 1], size=(HEIGHT, WIDTH), p=[0.8, 0.2])
 
     try:
