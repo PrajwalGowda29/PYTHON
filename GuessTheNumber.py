@@ -1,6 +1,6 @@
 #guessthenumber
 import random
-print("PRAJWAL BR, USN: 1AY24AI083, SEC: O")
+print("PRAJWAL B R, USN: 1AY24AI083, SEC: O")
 num = int(input("Enter the number between 1 to 9: "))
 while num < 1 or num > 9:
     num = int(input("Invalid input! Please enter a number between 1 to 9: "))
