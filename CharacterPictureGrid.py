@@ -4,7 +4,6 @@ def print_picture_grid(grid):
     for row in grid:
         print(' '.join(row))
 
-# Example usage
 picture_grid = [
     ['.', '.', '.', '.', '.', '.'],
     ['.', 'O', 'O', '.', '.', '.'],
