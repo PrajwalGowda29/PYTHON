@@ -1,15 +1,23 @@
-#collatzsequence
-print("Prajwal BR,USN:1AY24AI083,SEC:O")
-def collatz(number):
-    if number % 2 == 0:
-        result = number 
-    else:
-        result = 3 * number + 1
-    print(result)
-    return result
+print("Prajwal BR\nUSN:1AY24AI083\nSec:O")
+def collatz_sequence(n):
+    sequence = []
+    while n != 1:
+        sequence.append(n)
+        if n % 2 == 0:  
+            n = n // 2
+        else:           
+            n = 3 * n + 1
+    sequence.append(1)   
+    return sequence
+
 try:
-    user_input = int(input("Enter an integer: "))
-    while user_input != 1:
-        user_input = collatz(user_input)
+    num = int(input("Enter a positive integer: "))
+    if num <= 0:
+        print("Please enter a positive integer.")
+    else:
+        seq = collatz_sequence(num)
+        print(f"Collatz sequence for {num}:")
+        print(seq)
+        print(f"Length: {len(seq)} steps")
 except ValueError:
-    print("Please enter a valid integer.")
+    print("Invalid input. Please enter a positive integer.")
