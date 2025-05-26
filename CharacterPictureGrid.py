@@ -1,16 +1,20 @@
 #characterPicturGrid
-print("Prajwal BR,USN:1AY24AI083,SEC:O")
-grid = [['.', '.', '.', '.', '.', '.'],
-        ['.', 'O', 'O', '.', '.', '.'],
-        ['O', 'O', 'O', 'O', '.', '.'],
-        ['O', 'O', 'O', 'O', 'O', '.'],
-        ['.', 'O', 'O', 'O', 'O', 'O'],
-        ['O', 'O', 'O', 'O', 'O', '.'],
-        ['O', 'O', 'O', 'O', '.', '.'],
-        ['.', 'O', 'O', '.', '.', '.'],
-        ['.', '.', '.', '.', '.', '.']]
+print("Prajwal BR\nUSN:1AY24AI083\nSec:O")
+def print_picture_grid(grid):
+    for row in grid:
+        print(' '.join(row))
 
-for y in range(len(grid[0])):
-    for x in range(len(grid)):
-        print(grid[x][y], end='')
-    print()
+# Example usage
+picture_grid = [
+    ['.', '.', '.', '.', '.', '.'],
+    ['.', 'O', 'O', '.', '.', '.'],
+    ['O', 'O', 'O', 'O', '.', '.'],
+    ['O', 'O', 'O', 'O', 'O', '.'],
+    ['.', 'O', 'O', 'O', 'O', 'O'],
+    ['O', 'O', 'O', 'O', 'O', '.'],
+    ['O', 'O', 'O', 'O', '.', '.'],
+    ['.', 'O', 'O', '.', '.', '.'],
+    ['.', '.', '.', '.', '.', '.']
+]
+
+print_picture_grid(picture_grid)
